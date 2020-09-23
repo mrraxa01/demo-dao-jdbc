@@ -20,9 +20,9 @@ public class DB {
 				String url = props.getProperty("dburl");
 				conn = DriverManager.getConnection(url, props);
 			//método abaixo para confirmar a conexão, caso seja necessário é so tirar os comentários
-				/*	if(conn != null) {
+					if(conn != null) {
 					System.out.println("Connected Suscess!!");
-				}else {System.out.println("Connected Failed!");}*/
+				}else {System.out.println("Connected Failed!");}
 			}catch(SQLException e) {
 				throw new DbException(e.getMessage());
 			}
