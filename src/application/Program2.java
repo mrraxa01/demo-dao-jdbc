@@ -19,12 +19,15 @@ public class Program2 {
 		Department dep = new Department(6,"Tools");
 		depDao.update(dep);
 		System.out.println("Update completed!");
-		*/
+		
 		System.out.println("\n==== TEST 3 : department delete ====\n");
 		//Department dep = new Department();
 		depDao.deleteById(11);
 		System.out.println("Delete OK!");
-
+*/
+		System.out.println("\n==== TEST 4 : department findByID ====\n");
+		Department dep = depDao.findById(6);
+		System.out.println(dep);
 	}
 
 }
